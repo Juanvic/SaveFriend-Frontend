@@ -1,0 +1,33 @@
+<div class="row">
+    <mat-card class="col-md-4">
+        <div class="col-md-9 ">
+
+            <mat-card-title>Altere as Informações: </mat-card-title>
+
+            <form>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Plataforma:</mat-label>
+                    <input matInput placeholder="Ex: Steam, Epic" [(ngModel)]="friendCode.plataform" name="plataform">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nome de Usuário:</mat-label>
+                    <input matInput placeholder="Ex. LittleJoao, MariaX" [(ngModel)]="friendCode.name" name="name">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Código:</mat-label>
+                    <input matInput placeholder="Ex: 12345, 1111-2222" [(ngModel)]="friendCode.code" name="code">
+                </mat-form-field>
+            </form>
+
+
+            <button (click)="updateFriendCode()" mat-raised-button color="primary">Atualizar</button>
+            <button (click)="cancel()" mat-raised-button color="secondary">Cancelar</button>
+
+
+
+
+
+        </div>
+    </mat-card>
+</div>

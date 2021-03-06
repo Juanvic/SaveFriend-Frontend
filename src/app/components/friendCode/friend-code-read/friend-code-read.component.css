@@ -1,0 +1,36 @@
+.table-responsive {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.copy {
+    margin-right: 10px;
+}
+
+.copy>i {
+    color: #673ab7;
+}
+
+.edit {
+    margin-right: 10px;
+}
+
+.edit>i {
+    color: #673ab7;
+}
+
+.delete>i {
+    color: red;
+}
+
+.mat-table {
+    overflow: auto;
+    max-height: 500px;
+}

@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .title-group {
+    padding-left: 5px;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  

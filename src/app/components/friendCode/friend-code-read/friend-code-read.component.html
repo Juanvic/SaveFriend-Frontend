@@ -1,0 +1,68 @@
+<div class="row">
+<div class="mat-elevation-z5 table-responsive col-md-12 mx-auto mt-5">
+    <table mat-table [dataSource]="friendCodes">
+        <!-- Id Column -->
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>Id</th>
+            <td mat-cell *matCellDef="let row">{{row.id}}</td>
+        </ng-container>
+
+        <!-- Plataform Column -->
+        <ng-container matColumnDef="plataform">
+            <th mat-header-cell *matHeaderCellDef>Plataforma</th>
+            <td mat-cell *matCellDef="let row">{{row.plataform}}</td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Nome</th>
+            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <!-- Code Column -->
+        <ng-container matColumnDef="code">
+            <th mat-header-cell *matHeaderCellDef>Código</th>
+            <td mat-cell *matCellDef="let row">{{row.code}}</td>
+        </ng-container>
+
+        <!-- Action Column -->
+        <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef>Ações</th>
+            <td mat-cell *matCellDef="let row">
+                <a routerLink="" class="copy">
+                    <i class="material-icons">content_copy</i>
+                </a>
+                <a routerLink="/friendCodes/update/{{ row.id }}" class="edit">
+                    <i class="material-icons">edit</i>
+                </a>
+                <a routerLink="/friendCodes/delete/{{ row.id }}" class="delete">
+                    <i class="material-icons">delete</i>
+                </a>
+            </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
+
+</div>
+</div> <!-- FIM DA DIV ROW-->
+<!--
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            Angular Fundaments
+        </mat-panel-title>
+        <mat-panel-description>
+            Total Duration: 3 Hours
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>Aqui é o resto</p>
+    <mat-action-row>
+        <button mat-button>Enroll</button>
+    </mat-action-row>
+</mat-expansion-panel>
+-->
