@@ -27,6 +27,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { FriendCodeUpdateComponent } from './components/friendCode/friend-code-update/friend-code-update.component';
 import { FriendCodeDeleteComponent } from './components/friendCode/friend-code-delete/friend-code-delete.component';
 
+import { NgxCopyPasteModule } from 'ngx-copypaste'
+import { ClipboardModule } from 'ngx-clipboard';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import { FriendCodeDeleteComponent } from './components/friendCode/friend-code-d
     MatTableModule,
     HttpClientModule,
     FormsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgxCopyPasteModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
