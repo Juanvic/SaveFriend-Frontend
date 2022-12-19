@@ -8,12 +8,24 @@ Projeto criado com a função de armazenar códigos de amizade de diferentes pla
 ![Opera Instantâneo_2021-08-13_101243_localhost](https://user-images.githubusercontent.com/15617091/129362425-b6b8d743-8052-4705-8feb-8dd576f9d1f9.png)
 
 
-
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
 
+>Updated on Setember/2022 
+
+| Packages | Version |
+|---------|---------|
+| Angular  | 14.1.0 |
+| Node | 16.16.0 |
+| npm    | 8.11.0 |
+| rxjs    | 6.6.7 |
+| typescript | 4.6.4 |
+
+
 ## Development server
+
+First time run `npm install` then
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
