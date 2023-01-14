@@ -11,6 +11,7 @@ import { catchError, map } from "rxjs/operators";
 export class FriendCodeService {
 
   baseUrl = "http://localhost:3001/friendCodes";
+  friendCodeLocal: any;
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 

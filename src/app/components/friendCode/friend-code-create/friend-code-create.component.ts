@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 })
 export class FriendCodeCreateComponent implements OnInit {
 
+  friendCodeLocal: any;
+
   friendCode: friendCode = {
     plataform: '',
     name: '',
@@ -24,10 +26,19 @@ export class FriendCodeCreateComponent implements OnInit {
 
   createFriendCode(): void {
     this.friendCodeService.create(this.friendCode).subscribe(() => {
+      localStorage.setItem(this.friendCode.name, 'nome')
+      localStorage.setItem(this.friendCode.code, 'código')
+      localStorage.setItem(this.friendCode.plataform, 'plataforma')
+      console.log(this.friendCode.code + this.friendCode.name + this.friendCode.plataform)
       this.friendCodeService.showMessage('Informação salva com sucesso!')
       this.router.navigate([''])
     } )
     
+  }
+  
+  copyExport(){
+    this.friendCodeLocal = localStorage.getItem(this.friendCode.name);
+    alert(localStorage.getItem(this.friendCode.plataform))
   }
   
   cancel(): void {

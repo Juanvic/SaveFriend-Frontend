@@ -29,6 +29,7 @@ import { FriendCodeDeleteComponent } from './components/friendCode/friend-code-d
 
 import { NgxCopyPasteModule } from 'ngx-copypaste'
 import { ClipboardModule } from 'ngx-clipboard';
+import { PagenotfoundComponent } from './views/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ClipboardModule } from 'ngx-clipboard';
     FriendCodeCreateComponent,
     FriendCodeReadComponent,
     FriendCodeUpdateComponent,
-    FriendCodeDeleteComponent
+    FriendCodeDeleteComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

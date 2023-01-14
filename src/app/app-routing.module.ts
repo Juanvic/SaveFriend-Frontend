@@ -6,27 +6,33 @@ import { FriendCodeCreateComponent } from './components/friendCode/friend-code-c
 import { FriendCodeUpdateComponent } from './components/friendCode/friend-code-update/friend-code-update.component';
 import { FriendCodeCrudComponent } from "./views/friend-code-crud/friend-code-crud.component";
 import { FriendCodeDeleteComponent } from './components/friendCode/friend-code-delete/friend-code-delete.component';
+import { PagenotfoundComponent } from './views/pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {
-    path: "",
+    path: '',
+    pathMatch: 'full',
     component: HomeComponent
   },
   {
-    path: "friendCodes",
+    path: 'friendCodes',
     component: FriendCodeCrudComponent
   },
   {
-    path: "friendCodes/create",
+    path: 'friendCodes/create',
     component: FriendCodeCreateComponent
   },
   {
-    path: "friendCodes/update/:id",
+    path: 'friendCodes/update/:id',
     component: FriendCodeUpdateComponent
   },
   {
-    path: "friendCodes/delete/:id",
+    path: 'friendCodes/delete/:id',
     component: FriendCodeDeleteComponent
+  },
+  {
+    path: '**',
+    component: PagenotfoundComponent
   }
 ];
 
